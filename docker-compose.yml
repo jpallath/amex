@@ -7,13 +7,13 @@ services:
       - "27017:27017"
 
   nest-app:
-    build: ./amex-be
+    build: ./be
     ports:
       - "3001:3001"
     depends_on:
       - mongo
 
   react-app:
-    build: ./amex-fe
+    build: ./fe
     ports:
       - "3000:3000"
